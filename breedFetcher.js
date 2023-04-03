@@ -3,7 +3,7 @@ const args = process.argv.slice(2);
 
 const name = args[0];
 
-const breedFetcher = function (name) {
+const fetchBreedDescription = function (name) {
 
     request(`https://api.thecatapi.com/v1/breeds/search?name=${name}`, function (error, res, body) {
         if (error) {
@@ -22,4 +22,4 @@ const breedFetcher = function (name) {
 
 }
 
-breedFetcher(name);
+fetchBreedDescription(name);
