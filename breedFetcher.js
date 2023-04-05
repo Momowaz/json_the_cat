@@ -12,7 +12,7 @@ const fetchBreedDescription = function (name) {
         }
         const data = JSON.parse(body);
         if (data.length === 0) {
-            console.log('Breed not found, please check your URL');
+            console.log('Breed not found. Please check your URL');
             return;
         }
         console.log('\n');
